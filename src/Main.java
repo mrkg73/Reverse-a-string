@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-
-
 public class Main
 {
     public static void main(String[] args)
@@ -11,6 +9,8 @@ public class Main
         String nam= sc.nextLine();
         sc.close();
 
-         nam.chars().mapToObj(s->(char)s).toList().reversed().forEach(System.out::print);
+       for(int i=nam.length()-1;i>=0;i--)  System.out.print(nam.charAt(i));
+
+
     }
 }
